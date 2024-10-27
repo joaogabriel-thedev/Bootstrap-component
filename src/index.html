@@ -26,108 +26,104 @@
       <meta property="og:image:width" content="1800">
       <meta property="og:image:height" content="945">
   
-      <link rel="icon" type="image/svg" href="./assets/images/logo.svg" />
+      <link rel="icon" type="image/svg" href="https://odoocdn.com/web/image/website/1/favicon?unique=36ab9bb" />
   
       <!-- Fonts -->
       
       <!-- CSS and JavaScript -->
       <link rel="stylesheet" href="styles/app.css">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
       <script src="scripts/main.js" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
       <!-- Title -->
-      <title>New project</title>
+      <title>Odoo training</title>
 
 </head>
 <body>
-  <div class="container mt-5">
-    <div class="card">
+  <div class="container d-flex justify-content-center align-items-center m-0 p-0 mw-100 vw-100 vh-100">
+    <div class="card w-100 col-md-8 col-lg-6 rounded-0" style="max-width: 600px;">
       
       <!-- Card Header with Tabs -->
-      <div class="card-header">
+      <div class="card-header bg-dark rounded-0">
         <ul class="nav nav-tabs card-header-tabs" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active rounded-0" data-bs-toggle="tab" href="#tab1" role="tab">Tab 1</a>
+          <li class="nav-item pe-2">
+            <a class="nav-link active rounded-0 text-dark bg-light px-4" data-bs-toggle="tab" href="#tab1" role="tab">Tab 1</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link rounded-0" data-bs-toggle="tab" href="#tab2" role="tab">Tab 2</a>
+          <li class="nav-item pe-2">
+            <a class="nav-link rounded-0 text-dark bg-light px-4" data-bs-toggle="tab" href="#tab2" role="tab">Tab 2</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link rounded-0" data-bs-toggle="tab" href="#tab3" role="tab">Tab 3</a>
+          <li class="nav-item pe-2">
+            <a class="nav-link rounded-0 text-dark bg-light px-4" data-bs-toggle="tab" href="#tab3" role="tab">Tab 3</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled rounded-0" href="#" aria-disabled="true">Disabled Tab</a>
+          <li class="nav-item pe-2">
+            <a class="nav-link disabled rounded-0 text-dark bg-secondary px-4 text-white" href="#" aria-disabled="true">Disabled</a>
           </li>
         </ul>
       </div>
 
       <!-- Card Body with Tab Content -->
-      <div class="card-body tab-content">
+      <div class="card-body tab-content p-0">
         
         <!-- Tab 1 Content -->
         <div class="tab-pane fade show active" id="tab1" role="tabpanel">
-          <h3 class="mt-3">Title of Tab 1</h3>
-          <p>Subtitle goes here.</p>
-          <div class="row">
-            <div class="col-md-4">
-              <ul class="list-group">
-                <li class="list-group-item" onclick="showImage('img1')">Item 1</li>
-                <li class="list-group-item" onclick="showImage('img2')">Item 2</li>
-                <li class="list-group-item" onclick="showImage('img3')">Item 3</li>
+          <p class="font-weight-bolder mt-3 my-0 px-3"><b>Card title</b></p>
+          <p class="px-3">Card description</p>
+          <div class="row w-100 p-0 m-0 pt-3">
+            <div class="col-md-6 d-flex flex-column p-0">
+              <ul class="list-group flex-grow-1">
+                <li class="list-group-item h-100 d-flex align-items-center rounded-0 border-left-0 border-right-0 px-3" data-bs-toggle="collapse" data-bs-target="#img1" aria-expanded="true" aria-controls="img1">An item</li>
+                <li class="list-group-item h-100 d-flex align-items-center rounded-0 border-left-0 border-right-0 px-3" data-bs-toggle="collapse" data-bs-target="#img2" aria-expanded="false" aria-controls="img2">A second item</li>
+                <li class="list-group-item h-100 d-flex align-items-center rounded-0 border-left-0 border-right-0 px-3" data-bs-toggle="collapse" data-bs-target="#img3" aria-expanded="false" aria-controls="img3">A third item</li>
               </ul>
             </div>
-            <div class="col-md-8 img-container">
-              <img id="img1" src="https://via.placeholder.com/600x400?text=Image+1" alt="Image 1">
-              <img id="img2" src="https://via.placeholder.com/600x400?text=Image+2" alt="Image 2">
-              <img id="img3" src="https://via.placeholder.com/600x400?text=Image+3" alt="Image 3">
+            <div class="col-md-6 d-flex flex-column p-0">
+              <div id="img1" class="collapse show flex-grow-1" data-bs-parent="#tab1">
+                <img src="https://placehold.co/600x400?text=Image+1" alt="Image 1" class="img-fluid h-100 w-100 object-fit-cover">
+              </div>
+              <div id="img2" class="collapse flex-grow-1" data-bs-parent="#tab1">
+                <img src="https://placehold.co/600x400?text=Image+2" alt="Image 2" class="img-fluid h-100 w-100 object-fit-cover">
+              </div>
+              <div id="img3" class="collapse flex-grow-1" data-bs-parent="#tab1">
+                <img src="https://placehold.co/600x400?text=Image+3" alt="Image 3" class="img-fluid h-100 w-100 object-fit-cover">
+              </div>
             </div>
           </div>
         </div>
 
+
+
         <!-- Tab 2 Content -->
         <div class="tab-pane fade" id="tab2" role="tabpanel">
-          <div class="d-flex justify-content-center align-items-center" style="height: 200px;">
-            <div class="text-center">
-              <p>Loading...</p>
-              <svg width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="#007bff">
-                <circle cx="50" cy="50" r="35" stroke="#007bff" stroke-width="8" fill="none" stroke-linecap="round">
-                  <animateTransform
-                    attributeName="transform"
-                    type="rotate"
-                    from="0 50 50"
-                    to="360 50 50"
-                    dur="1s"
-                    repeatCount="indefinite" />
-                </circle>
-              </svg>
+          <div class="d-flex flex-column justify-content-center align-items-center" style="height: 200px;">
+            <span class="sr-only my-3">Loading...</span>
+            <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
             </div>
           </div>
         </div>
 
         <!-- Tab 3 Content -->
         <div class="tab-pane fade" id="tab3" role="tabpanel">
-          <div class="p-4">
-            <h3>Static Content</h3>
-            <p>This is some static content in Tab 3. You can place any text, images, or other elements here as needed.</p>
-            <ul>
-              <li>Item 1</li>
-              <li>Item 2</li>
-              <li>Item 3</li>
-            </ul>
-            <img src="https://via.placeholder.com/300x200" alt="Example image" class="img-fluid">
+          <div class="row w-100 m-0">
+            <div class="col-md-5 px-0 h-100 d-inline-block">
+              <img src="https://placehold.co/400x400?text=Image+4" alt="Example image" class="img-fluid h-100">
+            </div>
+            <div class="col-md-7 p-3 align-self-center">
+              <p class="font-weight-bold"><b>Card title</b></p>
+              <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Card Footer -->
-      <div class="card-footer text-center">
-        Footer content goes here.
+      <div class="card-footer text-left bg-dark text-white px-3 rounded-0">
+        2 days ago
       </div>
     </div>
   </div>
 
-  <!-- Bootstrap JS and dependencies -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- custom script -->
   <script>
     function showImage(imageId) {
       // Hide all images

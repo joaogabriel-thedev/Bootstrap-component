@@ -1,4 +1,6 @@
-@import 'components/normalize';
-@import 'components/reset';
-@import 'components/type';
-@import 'utils/variables';
+@import "node_modules/bootstrap/scss/bootstrap";
+
+:root {
+    --bs-dark-rgb: 52, 58, 64;
+    --bs-light-rgb: 222, 226, 230;
+}
