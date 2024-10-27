@@ -33,7 +33,8 @@
       <!-- CSS and JavaScript -->
       <link rel="stylesheet" href="styles/app.css">
       <script src="scripts/main.js" defer></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
 
       <!-- Title -->
       <title>Odoo training</title>
@@ -44,25 +45,25 @@
     <div class="card w-100 col-md-8 col-lg-6 rounded-0" style="max-width: 600px;">
       
       <!-- Card Header with Tabs -->
-      <div class="card-header bg-dark rounded-0">
-        <ul class="nav nav-tabs card-header-tabs" role="tablist">
+      <div class="card-header bg-dark rounded-0 border-0 pb-0 z-0">
+        <ul class="nav nav-tabs card-header-tabs pb-0 mb-0" role="tablist">
           <li class="nav-item pe-2">
-            <a class="nav-link active rounded-0 text-dark bg-light px-4" data-bs-toggle="tab" href="#tab1" role="tab">Tab 1</a>
+            <a class="nav-link active rounded-0 text-dark px-4 border-0" data-bs-toggle="tab" href="#tab1" role="tab" aria-selected="true">Tab 1</a>
           </li>
           <li class="nav-item pe-2">
-            <a class="nav-link rounded-0 text-dark bg-light px-4" data-bs-toggle="tab" href="#tab2" role="tab">Tab 2</a>
+            <a class="nav-link rounded-0 text-dark px-4 border-0" data-bs-toggle="tab" href="#tab2" role="tab" aria-selected="false">Tab 2</a>
           </li>
           <li class="nav-item pe-2">
-            <a class="nav-link rounded-0 text-dark bg-light px-4" data-bs-toggle="tab" href="#tab3" role="tab">Tab 3</a>
+            <a class="nav-link rounded-0 text-dark px-4 border-0" data-bs-toggle="tab" href="#tab3" role="tab" aria-selected="false">Tab 3</a>
           </li>
           <li class="nav-item pe-2">
-            <a class="nav-link disabled rounded-0 text-dark bg-secondary px-4 text-white" href="#" aria-disabled="true">Disabled</a>
+            <a class="nav-link disabled rounded-0 text-dark bg-secondary px-4 text-white border-0" href="#" aria-disabled="true" aria-selected="false">Disabled</a>
           </li>
         </ul>
       </div>
 
       <!-- Card Body with Tab Content -->
-      <div class="card-body tab-content p-0">
+      <div class="card-body tab-content p-0 z-1">
         
         <!-- Tab 1 Content -->
         <div class="tab-pane fade show active" id="tab1" role="tabpanel">
@@ -122,18 +123,5 @@
       </div>
     </div>
   </div>
-
-  <!-- custom script -->
-  <script>
-    function showImage(imageId) {
-      // Hide all images
-      document.querySelectorAll('.img-container img').forEach(img => {
-        img.style.display = 'none';
-      });
-      
-      // Show the selected image
-      document.getElementById(imageId).style.display = 'block';
-    }
-  </script>
 </body>
 </html>
