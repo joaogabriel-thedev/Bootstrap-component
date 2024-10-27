@@ -42,25 +42,30 @@
 </head>
 <body>
   <div class="container d-flex justify-content-center m-0 p-0 mw-100 vw-100">
-    <div class="card w-100 col-md-8 col-lg-6 m-3 rounded-4 border-dark overflow-hidden" style="max-width: 900px;">
+    <div class="card w-100 col-md-8 col-lg-6 m-3 rounded-0 border-0 overflow-hidden" style="max-width: 800px">
       
       <!-- Card Header with Tabs -->
-      <div class="card-header bg-dark rounded-top-3 pb-0 z-0">
-        <ul class="nav nav-tabs card-header-tabs pb-0 mb-0" role="tablist">
-          <li class="nav-item pe-2">
-            <a class="nav-link active -0 text-dark px-4 " data-bs-toggle="tab" href="#tab1" role="tab" aria-selected="true">
-              <i class="bi bi-0-circle"></i>
+      <div class="card-header bg-white rounded-top-3 z-0 border-0">
+        <ul class="nav nav-underline card-header-tabs pb-0 mb-0 border-top border-bottom" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active text-dark px-4 border-1" data-bs-toggle="tab" href="#tab1" role="tab" aria-selected="true">
               Tab 1
             </a>
           </li>
-          <li class="nav-item pe-2">
-            <a class="nav-link -0 text-dark px-4 " data-bs-toggle="tab" href="#tab2" role="tab" aria-selected="false">Tab 2</a>
+          <li class="nav-item">
+            <a class="nav-link text-dark px-4 border-1" data-bs-toggle="tab" href="#tab2" role="tab" aria-selected="false">
+              Tab 2
+            </a>
           </li>
-          <li class="nav-item pe-2">
-            <a class="nav-link -0 text-dark px-4 " data-bs-toggle="tab" href="#tab3" role="tab" aria-selected="false">Tab 3</a>
+          <li class="nav-item">
+            <a class="nav-link text-dark px-4 border-1" data-bs-toggle="tab" href="#tab3" role="tab" aria-selected="false">
+              Tab 3
+            </a>
           </li>
-          <li class="nav-item pe-2">
-            <a class="nav-link disabled -0 text-dark bg-secondary px-4 text-white " href="#" aria-disabled="true" aria-selected="false">Disabled</a>
+          <li class="nav-item">
+            <a class="nav-link disabled text-dark px-4 text-opacity-50" href="#" aria-disabled="true" aria-selected="false">
+              Disabled
+            </a>
           </li>
         </ul>
       </div>
@@ -69,7 +74,7 @@
       <div class="card-body tab-content p-0 z-1">
         
         <!-- Tab 1 Content -->
-        <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+        <div class="tab-pane fade show active my-5" id="tab1" role="tabpanel">
           <h3 class="font-weight-bolder mt-5 px-5">
             <b>Card title</b>
           </h3>
@@ -77,21 +82,21 @@
           <div class="row w-100 p-0 m-0 pt-3">
             <div class="col-md-6 d-flex flex-column p-0">
               <ul class="list-group flex-grow-1">
-                <li class="list-group-item h-100 d-flex align-items-center border-left-0 border-right-0 px-3 py-4 rounded-0" data-bs-toggle="collapse" data-bs-target="#img1" aria-expanded="true" aria-controls="img1">
+                <li class="list-group-item h-100 d-flex align-items-center border-left-0 border-right-0 px-3 py-4 rounded-0 border-0" data-bs-toggle="collapse" data-bs-target="#img1" aria-expanded="true" aria-controls="img1">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">
                     <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
                     <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54L1 12.5v-9a.5.5 0 0 1 .5-.5z"/>
                   </svg>
                   <p class="m-0 ps-3">An item</p>
                 </li>
-                <li class="list-group-item h-100 d-flex align-items-center border-left-0 border-right-0 px-3 py-4 rounded-0" data-bs-toggle="collapse" data-bs-target="#img2" aria-expanded="false" aria-controls="img2">
+                <li class="list-group-item h-100 d-flex align-items-center border-left-0 border-right-0 px-3 py-4 rounded-0 border-0" data-bs-toggle="collapse" data-bs-target="#img2" aria-expanded="false" aria-controls="img2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">
                     <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
                     <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54L1 12.5v-9a.5.5 0 0 1 .5-.5z"/>
                   </svg>
                   <p class="m-0 ps-3">A second item</p>
                 </li>
-                <li class="list-group-item h-100 d-flex align-items-center border-left-0 border-right-0 px-3 py-4 rounded-0" data-bs-toggle="collapse" data-bs-target="#img3" aria-expanded="false" aria-controls="img3">
+                <li class="list-group-item h-100 d-flex align-items-center border-left-0 border-right-0 px-3 py-4 rounded-0 border-0" data-bs-toggle="collapse" data-bs-target="#img3" aria-expanded="false" aria-controls="img3">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">
                     <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
                     <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54L1 12.5v-9a.5.5 0 0 1 .5-.5z"/>
@@ -102,22 +107,20 @@
             </div>
             <div class="col-md-6 d-flex flex-column p-0">
               <div id="img1" class="collapse show flex-grow-1" data-bs-parent="#tab1">
-                <img src="https://placehold.co/600x400?text=Image+1" alt="Image 1" class="img-fluid h-100 w-100 object-fit-cover">
+                <img src="https://placehold.co/600x400?text=Image+1" alt="Image 1" class="img-fluid w-100 object-fit-cover">
               </div>
               <div id="img2" class="collapse flex-grow-1" data-bs-parent="#tab1">
-                <img src="https://placehold.co/600x400?text=Image+2" alt="Image 2" class="img-fluid h-100 w-100 object-fit-cover">
+                <img src="https://placehold.co/600x400?text=Image+2" alt="Image 2" class="img-fluid w-100 object-fit-cover">
               </div>
               <div id="img3" class="collapse flex-grow-1" data-bs-parent="#tab1">
-                <img src="https://placehold.co/600x400?text=Image+3" alt="Image 3" class="img-fluid h-100 w-100 object-fit-cover">
+                <img src="https://placehold.co/600x400?text=Image+3" alt="Image 3" class="img-fluid w-100 object-fit-cover">
               </div>
             </div>
           </div>
         </div>
 
-
-
         <!-- Tab 2 Content -->
-        <div class="tab-pane fade" id="tab2" role="tabpanel">
+        <div class="tab-pane fade my-5" id="tab2" role="tabpanel">
           <div class="d-flex flex-column justify-content-center align-items-center" style="height: 200px;">
             <span class="sr-only my-3">Loading...</span>
             <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
@@ -126,7 +129,7 @@
         </div>
 
         <!-- Tab 3 Content -->
-        <div class="tab-pane fade" id="tab3" role="tabpanel">
+        <div class="tab-pane fade my-5" id="tab3" role="tabpanel">
           <div class="row w-100 m-0">
             <div class="col-md-6 p-5 align-self-center">
               <h3 class="font-weight-bold mb-4"><b>Card title</b></h3>
@@ -141,7 +144,7 @@
       </div>
 
       <!-- Card Footer -->
-      <div class="card-footer text-left bg-dark text-white px-3 rounded-bottom-3">
+      <div class="card-footer text-left bg-white px-3 border-top border-bottom rounded-0">
         2 days ago
       </div>
     </div>

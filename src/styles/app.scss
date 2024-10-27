@@ -6,15 +6,17 @@
     --bs-light-rgb: 222, 226, 230;
 }
 
-// could not find a way to make the background change on nav-item because the element have a background:none
-
 .nav-link {
-    background-color: $gray-300;
     transition: all .3s ease-in-out;
 
     &:hover {
-        background-color: $gray-500;
         color: #fff;
+        border-bottom: solid 2px $gray-600 !important;
+        background-color: $gray-100;
+    }
+
+    &.active {
+        border-bottom: solid 2px $gray-600 !important;
     }
 }
 
@@ -22,7 +24,7 @@
     transition: all .3s ease-in-out;
 
     &:hover {
-        background-color: $gray-200;
+        background-color: $gray-100;
         cursor: pointer;
     }
 }
